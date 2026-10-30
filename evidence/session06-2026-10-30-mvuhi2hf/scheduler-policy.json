@@ -1,0 +1,14 @@
+{
+  "RoleName": "fcaj-ws04-Web_monitoring-scheduler-role",
+  "PolicyName": "fcaj-ws04-Web_monitoring-invoke-lambda",
+  "PolicyDocument": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Action": "lambda:InvokeFunction",
+        "Effect": "Allow",
+        "Resource": "arn:aws:lambda:ap-southeast-1:244477277232:function:fcaj-ws04-Web_monitoring"
+      }
+    ]
+  }
+}

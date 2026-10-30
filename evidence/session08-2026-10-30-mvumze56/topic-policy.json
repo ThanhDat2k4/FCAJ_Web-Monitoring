@@ -1,0 +1,37 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "OwnerTopicAdministration",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::244477277232:root"
+      },
+      "Action": [
+        "sns:GetTopicAttributes",
+        "sns:SetTopicAttributes",
+        "sns:AddPermission",
+        "sns:RemovePermission",
+        "sns:DeleteTopic",
+        "sns:Subscribe",
+        "sns:ListSubscriptionsByTopic"
+      ],
+      "Resource": "arn:aws:sns:ap-southeast-1:244477277232:fcaj-ws04-Web_monitoring-alerts"
+    },
+    {
+      "Sid": "PublishOnlyFromAvailabilityAlarm",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "cloudwatch.amazonaws.com"
+      },
+      "Action": "sns:Publish",
+      "Resource": "arn:aws:sns:ap-southeast-1:244477277232:fcaj-ws04-Web_monitoring-alerts",
+      "Condition": {
+        "StringEquals": {
+          "aws:SourceArn": "arn:aws:cloudwatch:ap-southeast-1:244477277232:alarm:fcaj-ws04-Web_monitoring-availability-demo",
+          "aws:SourceAccount": "244477277232"
+        }
+      }
+    }
+  ]
+}

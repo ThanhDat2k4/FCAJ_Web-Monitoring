@@ -1,0 +1,17 @@
+{
+  "terraform fmt -check": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "terraform validate -no-color": {
+    "exit_code": 0,
+    "stdout": "Success! The configuration is valid.\n\n",
+    "stderr": ""
+  },
+  "terraform plan -input=false -no-color -detailed-exitcode": {
+    "exit_code": 0,
+    "result": "No changes. Your infrastructure matches the configuration.",
+    "source": "Read-only command executed earlier in session 09; not repeated here"
+  }
+}

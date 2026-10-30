@@ -1,0 +1,1 @@
+{"event": "website_check", "timestamp": "2026-10-30T03:58:55.413491+00:00", "request_id": "700f131e-7f10-4ce3-8fb5-90063b08cf9a", "target_url": "https://example.com", "http_status": 200, "latency_ms": 452.76, "is_healthy": true, "error": null}

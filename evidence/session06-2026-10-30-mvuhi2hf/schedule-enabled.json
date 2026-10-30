@@ -1,0 +1,24 @@
+{
+  "ActionAfterCompletion": "NONE",
+  "Arn": "arn:aws:scheduler:ap-southeast-1:244477277232:schedule/fcaj-ws04-Web_monitoring/fcaj-ws04-Web_monitoring-every-5-minutes",
+  "CreationDate": "2026-10-30T11:44:15.572000+07:00",
+  "Description": "Check the WS04 website every five minutes.",
+  "FlexibleTimeWindow": {
+    "Mode": "OFF"
+  },
+  "GroupName": "fcaj-ws04-Web_monitoring",
+  "LastModificationDate": "2026-10-30T11:45:06.222000+07:00",
+  "Name": "fcaj-ws04-Web_monitoring-every-5-minutes",
+  "ScheduleExpression": "rate(5 minutes)",
+  "ScheduleExpressionTimezone": "UTC",
+  "State": "ENABLED",
+  "Target": {
+    "Arn": "arn:aws:lambda:ap-southeast-1:244477277232:function:fcaj-ws04-Web_monitoring",
+    "Input": "{\"trigger\":\"scheduler\"}",
+    "RetryPolicy": {
+      "MaximumEventAgeInSeconds": 300,
+      "MaximumRetryAttempts": 2
+    },
+    "RoleArn": "arn:aws:iam::244477277232:role/fcaj-ws04-Web_monitoring-scheduler-role"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "verified_at": "2026-10-30T08:58:07.085213+00:00",
+  "console_ui_verified": true,
+  "console_account_verified": "244477277232",
+  "console_region": "ap-southeast-1",
+  "console_timezone": "UTC",
+  "display_start_utc": "2026-10-30T06:55:00Z",
+  "display_end_utc": "2026-10-30T07:40:00Z",
+  "display_start_vietnam": "2026-10-30T13:55:00+07:00",
+  "display_end_vietnam": "2026-10-30T14:40:00+07:00",
+  "screenshots_by": "agent using Playwright CLI after user authenticated directly",
+  "screenshot_privacy_visually_reviewed": true,
+  "dashboard_save_clicked": false,
+  "autosave_observed": "Off",
+  "data_source_configuration_checked_by": "API plus rendered widgets",
+  "metric_period": 300,
+  "mermaid_rendered": true,
+  "mermaid_renderer": "@mermaid-js/mermaid-cli 12.0.0",
+  "mermaid_png_visually_inspected": true,
+  "no_new_invocation_or_metric_publication": true,
+  "files": [
+    "dashboard-time-range.png",
+    "dashboard-widgets.png",
+    "architecture.mmd",
+    "architecture.svg",
+    "architecture.png",
+    "mermaid-render.json",
+    "dashboard-api.json",
+    "dashboard-data-300s.json",
+    "aws-final-read-only.json"
+  ]
+}

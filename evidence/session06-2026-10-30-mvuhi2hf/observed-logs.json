@@ -1,0 +1,20 @@
+{
+  "log_group": "/aws/lambda/fcaj-ws04-Web_monitoring",
+  "start_time_ms": 1793335503302,
+  "events": [
+    {
+      "logStreamName": "2026/10/30/[$LATEST]8a9d5217e0e24f9ba23aa68bcaa0c10a",
+      "timestamp": 1793335547442,
+      "message": "{\"event\": \"website_check\", \"timestamp\": \"2026-10-30T04:45:47.442424+00:00\", \"request_id\": \"1c6ae420-d2c0-43f6-9096-37d39ae5bdc4\", \"target_url\": \"https://example.com\", \"http_status\": 200, \"latency_ms\": 455.86, \"is_healthy\": true, \"error\": null}\n",
+      "ingestionTime": 1793335555672,
+      "eventId": "39992719098971468027695360833561561112956602991035351042"
+    },
+    {
+      "logStreamName": "2026/10/30/[$LATEST]8a9d5217e0e24f9ba23aa68bcaa0c10a",
+      "timestamp": 1793335837484,
+      "message": "{\"event\": \"website_check\", \"timestamp\": \"2026-10-30T04:50:37.483925+00:00\", \"request_id\": \"1c6ae421-fec0-43f6-9096-37d39ae5bdc4\", \"target_url\": \"https://example.com\", \"http_status\": 200, \"latency_ms\": 120.17, \"is_healthy\": true, \"error\": null}\n",
+      "ingestionTime": 1793335846359,
+      "eventId": "39992725567124206899914358402283681702633086955577737217"
+    }
+  ]
+}

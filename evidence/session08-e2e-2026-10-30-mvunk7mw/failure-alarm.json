@@ -1,0 +1,35 @@
+{
+  "AlarmName": "fcaj-ws04-Web_monitoring-availability-demo",
+  "AlarmArn": "arn:aws:cloudwatch:ap-southeast-1:244477277232:alarm:fcaj-ws04-Web_monitoring-availability-demo",
+  "AlarmDescription": "WS04 demo: unhealthy check. Missing data is unknown; this does not detect a stopped monitor.",
+  "AlarmConfigurationUpdatedTimestamp": "2026-10-30T14:20:50.700000+07:00",
+  "ActionsEnabled": true,
+  "OKActions": [
+    "arn:aws:sns:ap-southeast-1:244477277232:fcaj-ws04-Web_monitoring-alerts"
+  ],
+  "AlarmActions": [
+    "arn:aws:sns:ap-southeast-1:244477277232:fcaj-ws04-Web_monitoring-alerts"
+  ],
+  "InsufficientDataActions": [],
+  "StateValue": "ALARM",
+  "StateReason": "Threshold Crossed: 1 out of the last 1 datapoints [0.0 (30/10/26 07:33:00)] was less than the threshold (1.0) (minimum 1 datapoint for OK -> ALARM transition).",
+  "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2026-10-30T07:34:40.928+0000\",\"startDate\":\"2026-10-30T07:33:00.000+0000\",\"unit\":\"None\",\"statistic\":\"Minimum\",\"period\":60,\"recentDatapoints\":[0.0],\"threshold\":1.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-10-30T07:33:00.000+0000\",\"sampleCount\":1.0,\"value\":0.0}]}",
+  "StateUpdatedTimestamp": "2026-10-30T14:34:40.929000+07:00",
+  "MetricName": "Availability",
+  "Namespace": "FCAJ/WebsiteMonitoring",
+  "Statistic": "Minimum",
+  "Dimensions": [
+    {
+      "Name": "MonitorId",
+      "Value": "ws04-main"
+    }
+  ],
+  "Period": 60,
+  "Unit": "None",
+  "EvaluationPeriods": 1,
+  "DatapointsToAlarm": 1,
+  "Threshold": 1.0,
+  "ComparisonOperator": "LessThanThreshold",
+  "TreatMissingData": "missing",
+  "StateTransitionedTimestamp": "2026-10-30T14:34:40.929000+07:00"
+}

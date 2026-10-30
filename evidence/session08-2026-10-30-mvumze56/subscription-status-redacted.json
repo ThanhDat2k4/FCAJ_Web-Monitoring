@@ -1,0 +1,8 @@
+[
+  {
+    "Protocol": "email",
+    "Endpoint": "[REDACTED]",
+    "SubscriptionArn": "PendingConfirmation",
+    "confirmed": false
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "account": "244477277232",
+  "region": "ap-southeast-1",
+  "errors": [],
+  "e2e_started": false,
+  "email_receipt_confirmed_by_user": false,
+  "subscription_confirmed": false,
+  "subscription_status": "PENDING_CONFIRMATION",
+  "awaiting_user_confirmation": true,
+  "scheduler_disabled": true,
+  "scheduler_unchanged": true,
+  "lambda_unchanged": true,
+  "target_url": "https://example.com",
+  "final_plan_no_changes": true
+}

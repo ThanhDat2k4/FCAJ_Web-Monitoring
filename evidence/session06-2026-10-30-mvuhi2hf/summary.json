@@ -1,0 +1,40 @@
+{
+  "account": "244477277232",
+  "region": "ap-southeast-1",
+  "function": "fcaj-ws04-Web_monitoring",
+  "group": "fcaj-ws04-Web_monitoring",
+  "schedule": "fcaj-ws04-Web_monitoring-every-5-minutes",
+  "errors": [],
+  "manual_invocations": 0,
+  "observed_runs": [
+    {
+      "event": "website_check",
+      "timestamp": "2026-10-30T04:45:47.442424+00:00",
+      "request_id": "1c6ae420-d2c0-43f6-9096-37d39ae5bdc4",
+      "target_url": "https://example.com",
+      "http_status": 200,
+      "latency_ms": 455.86,
+      "is_healthy": true,
+      "error": null
+    },
+    {
+      "event": "website_check",
+      "timestamp": "2026-10-30T04:50:37.483925+00:00",
+      "request_id": "1c6ae421-fec0-43f6-9096-37d39ae5bdc4",
+      "target_url": "https://example.com",
+      "http_status": 200,
+      "latency_ms": 120.17,
+      "is_healthy": true,
+      "error": null
+    }
+  ],
+  "disabled": true,
+  "enable_requested_at": "2026-10-30T04:45:03.302606+00:00",
+  "enabled_confirmed_at": "2026-10-30T04:45:14.905682+00:00",
+  "observation_ended_at": "2026-10-30T04:51:04.147139+00:00",
+  "attribution": "Logs directly prove executions and HTTP results. Scheduler attribution is inferred from enabled configuration, timing, metrics if present, and no manual invocations by this experiment; app does not log trigger.",
+  "disable_requested_at": "2026-10-30T04:51:21.953571+00:00",
+  "disabled_confirmed_at": "2026-10-30T04:51:32.009500+00:00",
+  "final_plan_no_changes": true,
+  "lambda_configuration_unchanged": true
+}

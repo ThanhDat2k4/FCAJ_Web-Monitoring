@@ -1,0 +1,10 @@
+flowchart LR
+    Scheduler[EventBridge Scheduler] --> Lambda[AWS Lambda]
+    Lambda --> Website[Website HTTP GET]
+    Lambda --> Logs[CloudWatch Logs JSON]
+    Lambda --> Metrics[Availability and Latency]
+    Metrics --> Dashboard[CloudWatch Dashboard]
+    Metrics --> Alarm[Availability Alarm]
+    Alarm --> SNS[SNS Standard topic]
+    SNS --> Email[Confirmed email subscription]
+    Native[AWS Lambda service metrics] --> Dashboard

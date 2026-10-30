@@ -1,0 +1,10 @@
+{
+  "relative_link_findings": [],
+  "private_email_or_sns_links_detected": false,
+  "work_files_gitignored": true,
+  "svg_xml_valid": true,
+  "mermaid_source_unchanged": true,
+  "period300_values_match_console_evidence": true,
+  "new_console_screenshots_visually_reviewed": true,
+  "tests_or_terraform_plan_repeated": false
+}

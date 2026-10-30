@@ -1,0 +1,37 @@
+{
+  "account": "244477277232",
+  "region": "ap-southeast-1",
+  "function": "fcaj-ws04-Web_monitoring",
+  "original_url": "https://example.com",
+  "failure_url": "https://httpbin.org/status/503",
+  "errors": [],
+  "restored": true,
+  "source_comparison": {
+    "local_and_deployed_app_sha256": "766f9be24bca81191ae7bdebaa13eff6800a387b0bb6fb6dcfcbdd284d6c5bac",
+    "deployment_package_sha256_base64": "S49/nUz/mocng0C+1WBKHd/nw0tfrILbPKDba+Up6D4=",
+    "exact_app_match_verified_before_plan": true
+  },
+  "failure": {
+    "passed": false,
+    "request_id": "b8b68603-011e-4a0a-95fd-31b777c5507d",
+    "http_status": 503,
+    "is_healthy": false,
+    "error": "HTTP 503",
+    "matching_log_events": 0
+  },
+  "restored_configuration": {
+    "target_url": "https://example.com",
+    "all_environment_variables_match_initial": true,
+    "code_hash_matches_initial": true,
+    "last_update_status": "Successful"
+  },
+  "recovery": {
+    "passed": false,
+    "request_id": "b05255ba-54b9-406d-9aec-70980657c9ef",
+    "http_status": 200,
+    "is_healthy": true,
+    "error": null,
+    "matching_log_events": 0
+  },
+  "final_plan_no_changes": true
+}

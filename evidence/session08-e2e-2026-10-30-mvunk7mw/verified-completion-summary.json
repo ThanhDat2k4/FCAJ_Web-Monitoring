@@ -1,0 +1,89 @@
+{
+  "account": "244477277232",
+  "region": "ap-southeast-1",
+  "phases": {
+    "baseline": {
+      "started_at": "2026-10-30T07:31:21.832174+00:00",
+      "response": {
+        "event": "website_check",
+        "timestamp": "2026-10-30T07:31:20.906700+00:00",
+        "request_id": "3cbfcc3b-9ac7-401f-84b8-bffcd5e48238",
+        "target_url": "https://example.com",
+        "http_status": 200,
+        "latency_ms": 457.35,
+        "is_healthy": true,
+        "error": null
+      },
+      "metric_matches": true,
+      "alarm_state_verified": true,
+      "log_matches": true,
+      "alarm_state": "OK",
+      "state_reason": "Threshold Crossed: 1 out of the last 1 datapoints [1.0 (30/10/26 07:31:00)] was not less than the threshold (1.0) (minimum 1 datapoint for ALARM -> OK transition).",
+      "state_updated_at": "2026-10-30T14:32:40.934000+07:00"
+    },
+    "failure": {
+      "started_at": "2026-10-30T07:33:18.910323+00:00",
+      "response": {
+        "event": "website_check",
+        "timestamp": "2026-10-30T07:33:18.185273+00:00",
+        "request_id": "8075cd9e-663e-4583-92d6-7101f34930b6",
+        "target_url": "https://httpbin.org/status/503",
+        "http_status": 503,
+        "latency_ms": 995.07,
+        "is_healthy": false,
+        "error": "HTTP 503"
+      },
+      "metric_matches": true,
+      "alarm_state_verified": true,
+      "log_matches": true,
+      "alarm_state": "ALARM",
+      "state_reason": "Threshold Crossed: 1 out of the last 1 datapoints [0.0 (30/10/26 07:33:00)] was less than the threshold (1.0) (minimum 1 datapoint for OK -> ALARM transition).",
+      "state_updated_at": "2026-10-30T14:34:40.929000+07:00"
+    },
+    "recovery": {
+      "started_at": "2026-10-30T07:35:14.277728+00:00",
+      "response": {
+        "event": "website_check",
+        "timestamp": "2026-10-30T07:35:12.828285+00:00",
+        "request_id": "a23cfcce-b2f6-42f4-bb43-bd01b6452ae9",
+        "target_url": "https://example.com",
+        "http_status": 200,
+        "latency_ms": 448.13,
+        "is_healthy": true,
+        "error": null
+      },
+      "metric_matches": true,
+      "alarm_state_verified": true,
+      "log_matches": true,
+      "alarm_state": "OK",
+      "state_reason": "Threshold Crossed: 1 out of the last 1 datapoints [1.0 (30/10/26 07:35:00)] was not less than the threshold (1.0) (minimum 1 datapoint for ALARM -> OK transition).",
+      "state_updated_at": "2026-10-30T14:36:40.930000+07:00"
+    }
+  },
+  "errors": [],
+  "subscription_confirmed_by_user": true,
+  "alarm_email_received_by_user": true,
+  "recovery_email_received_by_user": true,
+  "target_url_restored": true,
+  "target_url": "https://example.com",
+  "scheduler_disabled": true,
+  "scheduler_unchanged": true,
+  "lambda_code_unchanged": true,
+  "sns_success_actions": [
+    {
+      "Timestamp": "2026-10-30T14:32:40.974000+07:00",
+      "HistorySummary": "Successfully executed action arn:aws:sns:ap-southeast-1:244477277232:fcaj-ws04-Web_monitoring-alerts"
+    },
+    {
+      "Timestamp": "2026-10-30T14:34:40.990000+07:00",
+      "HistorySummary": "Successfully executed action arn:aws:sns:ap-southeast-1:244477277232:fcaj-ws04-Web_monitoring-alerts"
+    },
+    {
+      "Timestamp": "2026-10-30T14:36:40.969000+07:00",
+      "HistorySummary": "Successfully executed action arn:aws:sns:ap-southeast-1:244477277232:fcaj-ws04-Web_monitoring-alerts"
+    }
+  ],
+  "final_plan_no_changes": true,
+  "email_evidence": "User confirmation; see email-receipt-confirmation.json",
+  "e2e_complete": true
+}

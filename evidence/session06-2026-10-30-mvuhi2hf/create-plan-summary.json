@@ -1,0 +1,30 @@
+{
+  "mode": "create",
+  "changes": [
+    {
+      "address": "aws_iam_role.monitoring_scheduler",
+      "actions": [
+        "create"
+      ]
+    },
+    {
+      "address": "aws_iam_role_policy.monitoring_scheduler_invoke",
+      "actions": [
+        "create"
+      ]
+    },
+    {
+      "address": "aws_scheduler_schedule.monitoring",
+      "actions": [
+        "create"
+      ]
+    },
+    {
+      "address": "aws_scheduler_schedule_group.monitoring",
+      "actions": [
+        "create"
+      ]
+    }
+  ],
+  "no_changes": false
+}

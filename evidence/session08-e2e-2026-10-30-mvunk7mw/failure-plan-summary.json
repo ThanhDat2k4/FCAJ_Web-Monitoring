@@ -1,0 +1,12 @@
+{
+  "resource": "aws_lambda_function.monitoring",
+  "actions": [
+    "update"
+  ],
+  "only_changed_field": "environment.variables.TARGET_URL",
+  "before_url": "https://example.com",
+  "after_url": "https://httpbin.org/status/503",
+  "add": 0,
+  "change": 1,
+  "destroy": 0
+}

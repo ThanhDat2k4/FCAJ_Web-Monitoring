@@ -1,0 +1,102 @@
+{
+  "start_utc": "2026-10-30T06:55:00Z",
+  "end_utc": "2026-10-30T07:40:00Z",
+  "period": 300,
+  "results": {
+    "FCAJ/WebsiteMonitoring/Availability": {
+      "Label": "Availability",
+      "Datapoints": [
+        {
+          "Timestamp": "2026-10-30T14:00:00+07:00",
+          "SampleCount": 1.0,
+          "Average": 1.0,
+          "Minimum": 1.0,
+          "Maximum": 1.0,
+          "Unit": "None"
+        },
+        {
+          "Timestamp": "2026-10-30T14:35:00+07:00",
+          "SampleCount": 1.0,
+          "Average": 1.0,
+          "Minimum": 1.0,
+          "Maximum": 1.0,
+          "Unit": "None"
+        },
+        {
+          "Timestamp": "2026-10-30T14:30:00+07:00",
+          "SampleCount": 2.0,
+          "Average": 0.5,
+          "Minimum": 0.0,
+          "Maximum": 1.0,
+          "Unit": "None"
+        }
+      ]
+    },
+    "FCAJ/WebsiteMonitoring/Latency": {
+      "Label": "Latency",
+      "Datapoints": [
+        {
+          "Timestamp": "2026-10-30T14:00:00+07:00",
+          "SampleCount": 1.0,
+          "Average": 455.59,
+          "Maximum": 455.59,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-10-30T14:35:00+07:00",
+          "SampleCount": 1.0,
+          "Average": 448.13,
+          "Maximum": 448.13,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-10-30T14:30:00+07:00",
+          "SampleCount": 2.0,
+          "Average": 726.21,
+          "Maximum": 995.07,
+          "Unit": "Milliseconds"
+        }
+      ]
+    },
+    "AWS/Lambda/Invocations": {
+      "Label": "Invocations",
+      "Datapoints": [
+        {
+          "Timestamp": "2026-10-30T14:00:00+07:00",
+          "Sum": 1.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-10-30T14:30:00+07:00",
+          "Sum": 2.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-10-30T14:35:00+07:00",
+          "Sum": 1.0,
+          "Unit": "Count"
+        }
+      ]
+    },
+    "AWS/Lambda/Errors": {
+      "Label": "Errors",
+      "Datapoints": [
+        {
+          "Timestamp": "2026-10-30T14:00:00+07:00",
+          "Sum": 0.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-10-30T14:30:00+07:00",
+          "Sum": 0.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-10-30T14:35:00+07:00",
+          "Sum": 0.0,
+          "Unit": "Count"
+        }
+      ]
+    }
+  }
+}

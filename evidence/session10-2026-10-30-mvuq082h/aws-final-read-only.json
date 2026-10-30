@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-30T08:55:28.255985+00:00",
+  "account": "244477277232",
+  "region": "ap-southeast-1",
+  "target_url": "https://example.com",
+  "scheduler_state": "DISABLED",
+  "dashboard_body_unchanged_from_session07": true,
+  "dashboard_api_sources_verified": true,
+  "no_apply_destroy_invoke_publish_or_dashboard_save": true
+}

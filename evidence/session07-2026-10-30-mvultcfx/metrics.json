@@ -1,0 +1,46 @@
+{
+  "poll_count": 2,
+  "query": {
+    "namespace": "FCAJ/WebsiteMonitoring",
+    "dimensions": {
+      "MonitorId": "ws04-main"
+    },
+    "start_time": "2026-10-30T07:00:00+00:00",
+    "end_time": "2026-10-30T07:01:00.651925+00:00",
+    "period": 60,
+    "statistics": [
+      "Minimum",
+      "Maximum",
+      "Average",
+      "SampleCount"
+    ],
+    "results": {
+      "Availability": {
+        "Label": "Availability",
+        "Datapoints": [
+          {
+            "Timestamp": "2026-10-30T14:00:00+07:00",
+            "SampleCount": 1.0,
+            "Average": 1.0,
+            "Minimum": 1.0,
+            "Maximum": 1.0,
+            "Unit": "None"
+          }
+        ]
+      },
+      "Latency": {
+        "Label": "Latency",
+        "Datapoints": [
+          {
+            "Timestamp": "2026-10-30T14:00:00+07:00",
+            "SampleCount": 1.0,
+            "Average": 455.59,
+            "Minimum": 455.59,
+            "Maximum": 455.59,
+            "Unit": "Milliseconds"
+          }
+        ]
+      }
+    }
+  }
+}

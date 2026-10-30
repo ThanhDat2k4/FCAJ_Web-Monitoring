@@ -1,0 +1,14 @@
+{
+  "account": "244477277232",
+  "region": "ap-southeast-1",
+  "errors": [
+    "Dashboard API differs from the reviewed plan"
+  ],
+  "dashboard_url": "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#dashboards:name=fcaj-ws04-Web_monitoring",
+  "invocation_commands": 0,
+  "console_ui_verified": false,
+  "scheduler_disabled": true,
+  "scheduler_unchanged": true,
+  "lambda_configuration_preserved_except_code": true,
+  "final_plan_no_changes": true
+}

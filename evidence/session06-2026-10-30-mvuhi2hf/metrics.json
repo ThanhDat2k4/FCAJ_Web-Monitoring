@@ -1,0 +1,51 @@
+{
+  "AWS/Scheduler/InvocationAttemptCount": {
+    "Label": "InvocationAttemptCount",
+    "Datapoints": [
+      {
+        "Timestamp": "2026-10-30T11:45:00+07:00",
+        "Sum": 1.0,
+        "Unit": "None"
+      },
+      {
+        "Timestamp": "2026-10-30T11:50:00+07:00",
+        "Sum": 1.0,
+        "Unit": "None"
+      }
+    ]
+  },
+  "AWS/Scheduler/TargetErrorCount": {
+    "Label": "TargetErrorCount",
+    "Datapoints": []
+  },
+  "AWS/Lambda/Invocations": {
+    "Label": "Invocations",
+    "Datapoints": [
+      {
+        "Timestamp": "2026-10-30T11:45:00+07:00",
+        "Sum": 1.0,
+        "Unit": "Count"
+      },
+      {
+        "Timestamp": "2026-10-30T11:50:00+07:00",
+        "Sum": 1.0,
+        "Unit": "Count"
+      }
+    ]
+  },
+  "AWS/Lambda/Errors": {
+    "Label": "Errors",
+    "Datapoints": [
+      {
+        "Timestamp": "2026-10-30T11:45:00+07:00",
+        "Sum": 0.0,
+        "Unit": "Count"
+      },
+      {
+        "Timestamp": "2026-10-30T11:50:00+07:00",
+        "Sum": 0.0,
+        "Unit": "Count"
+      }
+    ]
+  }
+}

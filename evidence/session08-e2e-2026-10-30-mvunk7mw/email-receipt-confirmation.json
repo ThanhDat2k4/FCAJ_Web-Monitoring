@@ -1,0 +1,9 @@
+{
+  "source": "User confirmation in chat",
+  "confirmed_at": "2026-10-30T14:46:12.337838+07:00",
+  "alarm_email_received": true,
+  "recovery_email_received": true,
+  "baseline_ok_excluded": true,
+  "mailbox_accessed_by_agent": false,
+  "email_screenshots_verified": false
+}

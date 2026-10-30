@@ -1,0 +1,17 @@
+{
+  "renderer": "@mermaid-js/mermaid-cli",
+  "version": "12.0.0",
+  "browser": "Installed Google Chrome",
+  "source": "README.md Mermaid block extracted without changes",
+  "source_sha256": "dc12a7e7893236db99873b6f1d1b04736e6073e520ebbb922c19b0c2275ef4f5",
+  "svg_created": true,
+  "png_created": true,
+  "png_visually_inspected": true,
+  "diagram_source_changed": false,
+  "render_options": "--size 2400 -b white; puppeteer executablePath points to installed Chrome",
+  "source_files": {
+    "architecture.mmd": "5e195f58297bc45701f622b1f5f01d44e3e80cb1910bb005dbe0b7b26f22ca55",
+    "architecture.png": "02dff0236af84736c4b82bf79badc196c4f2c5136684e641c1df6a1be39e455e",
+    "architecture.svg": "b1aaca82c41d95052c562428a27bde1736d2925085c1dc6c237e0e61bff28ee1"
+  }
+}

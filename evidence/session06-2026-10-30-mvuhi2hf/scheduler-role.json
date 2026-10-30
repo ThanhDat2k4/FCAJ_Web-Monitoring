@@ -1,0 +1,22 @@
+{
+  "Arn": "arn:aws:iam::244477277232:role/fcaj-ws04-Web_monitoring-scheduler-role",
+  "RoleName": "fcaj-ws04-Web_monitoring-scheduler-role",
+  "Trust": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Principal": {
+          "Service": "scheduler.amazonaws.com"
+        },
+        "Action": "sts:AssumeRole",
+        "Condition": {
+          "StringEquals": {
+            "aws:SourceAccount": "244477277232",
+            "aws:SourceArn": "arn:aws:scheduler:ap-southeast-1:244477277232:schedule-group/fcaj-ws04-Web_monitoring"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "mode": "enable",
+  "changes": [
+    {
+      "address": "aws_scheduler_schedule.monitoring",
+      "actions": [
+        "update"
+      ]
+    }
+  ],
+  "no_changes": false,
+  "before_state": "DISABLED",
+  "after_state": "ENABLED"
+}

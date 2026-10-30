@@ -1,0 +1,21 @@
+{
+  "namespace": "FCAJ/WebsiteMonitoring",
+  "dimension": {
+    "MonitorId": "ws04-main"
+  },
+  "period": 60,
+  "start_time": "2026-10-30T07:31:00+00:00",
+  "data": {
+    "Label": "Availability",
+    "Datapoints": [
+      {
+        "Timestamp": "2026-10-30T14:31:00+07:00",
+        "SampleCount": 1.0,
+        "Average": 1.0,
+        "Minimum": 1.0,
+        "Maximum": 1.0,
+        "Unit": "None"
+      }
+    ]
+  }
+}

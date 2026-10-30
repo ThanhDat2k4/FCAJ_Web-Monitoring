@@ -1,0 +1,30 @@
+{
+  "changes": [
+    {
+      "address": "aws_cloudwatch_metric_alarm.availability",
+      "actions": [
+        "create"
+      ]
+    },
+    {
+      "address": "aws_sns_topic.monitoring_alerts",
+      "actions": [
+        "create"
+      ]
+    },
+    {
+      "address": "aws_sns_topic_policy.monitoring_alerts",
+      "actions": [
+        "create"
+      ]
+    },
+    {
+      "address": "aws_sns_topic_subscription.monitoring_email",
+      "actions": [
+        "create"
+      ]
+    }
+  ],
+  "endpoint": "[REDACTED]",
+  "existing_resources_unchanged": true
+}

@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-30T08:00:59.094756+00:00",
+  "account": "244477277232",
+  "region": "ap-southeast-1",
+  "function_arn": "arn:aws:lambda:ap-southeast-1:244477277232:function:fcaj-ws04-Web_monitoring",
+  "target_url": "https://example.com",
+  "runtime": "python3.13",
+  "scheduler_state": "DISABLED",
+  "alarm_state": "INSUFFICIENT_DATA",
+  "alarm_state_reason": "Insufficient Data: 1 datapoint was unknown.",
+  "subscriptions": [
+    {
+      "Protocol": "email",
+      "Endpoint": "[REDACTED]",
+      "SubscriptionArn": "arn:aws:sns:ap-southeast-1:244477277232:fcaj-ws04-Web_monitoring-alerts:36e81bb3-d9ff-4e29-aadb-5b7212b7a4dd",
+      "confirmed": true
+    }
+  ],
+  "scope": "Read-only; no invocation, publish, apply or destroy"
+}

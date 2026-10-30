@@ -1,0 +1,34 @@
+{
+  "AlarmName": "fcaj-ws04-Web_monitoring-availability-demo",
+  "AlarmArn": "arn:aws:cloudwatch:ap-southeast-1:244477277232:alarm:fcaj-ws04-Web_monitoring-availability-demo",
+  "AlarmDescription": "WS04 demo: unhealthy check. Missing data is unknown; this does not detect a stopped monitor.",
+  "AlarmConfigurationUpdatedTimestamp": "2026-10-30T14:20:50.700000+07:00",
+  "ActionsEnabled": true,
+  "OKActions": [
+    "arn:aws:sns:ap-southeast-1:244477277232:fcaj-ws04-Web_monitoring-alerts"
+  ],
+  "AlarmActions": [
+    "arn:aws:sns:ap-southeast-1:244477277232:fcaj-ws04-Web_monitoring-alerts"
+  ],
+  "InsufficientDataActions": [],
+  "StateValue": "INSUFFICIENT_DATA",
+  "StateReason": "Unchecked: Initial alarm creation",
+  "StateUpdatedTimestamp": "2026-10-30T14:20:50.700000+07:00",
+  "MetricName": "Availability",
+  "Namespace": "FCAJ/WebsiteMonitoring",
+  "Statistic": "Minimum",
+  "Dimensions": [
+    {
+      "Name": "MonitorId",
+      "Value": "ws04-main"
+    }
+  ],
+  "Period": 60,
+  "Unit": "None",
+  "EvaluationPeriods": 1,
+  "DatapointsToAlarm": 1,
+  "Threshold": 1.0,
+  "ComparisonOperator": "LessThanThreshold",
+  "TreatMissingData": "missing",
+  "StateTransitionedTimestamp": "2026-10-30T14:20:50.700000+07:00"
+}

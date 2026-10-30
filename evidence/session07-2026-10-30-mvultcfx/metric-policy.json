@@ -1,0 +1,19 @@
+{
+  "RoleName": "fcaj-ws04-Web_monitoring-lambda-role",
+  "PolicyName": "fcaj-ws04-Web_monitoring-publish-metrics",
+  "PolicyDocument": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Action": "cloudwatch:PutMetricData",
+        "Condition": {
+          "StringEquals": {
+            "cloudwatch:namespace": "FCAJ/WebsiteMonitoring"
+          }
+        },
+        "Effect": "Allow",
+        "Resource": "*"
+      }
+    ]
+  }
+}

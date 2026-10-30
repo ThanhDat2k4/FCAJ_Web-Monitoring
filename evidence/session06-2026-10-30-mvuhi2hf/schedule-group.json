@@ -1,0 +1,7 @@
+{
+  "Arn": "arn:aws:scheduler:ap-southeast-1:244477277232:schedule-group/fcaj-ws04-Web_monitoring",
+  "CreationDate": "2026-10-30T11:44:00.737000+07:00",
+  "LastModificationDate": "2026-10-30T11:44:00.737000+07:00",
+  "Name": "fcaj-ws04-Web_monitoring",
+  "State": "ACTIVE"
+}

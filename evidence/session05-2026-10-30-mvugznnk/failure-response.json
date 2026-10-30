@@ -1,0 +1,1 @@
+{"event": "website_check", "timestamp": "2026-10-30T04:29:02.902227+00:00", "request_id": "b8b68603-011e-4a0a-95fd-31b777c5507d", "target_url": "https://httpbin.org/status/503", "http_status": 503, "latency_ms": 1052.87, "is_healthy": false, "error": "HTTP 503"}

@@ -1,0 +1,16 @@
+{
+  "changes": {
+    "aws_cloudwatch_dashboard.monitoring": [
+      "create"
+    ],
+    "aws_iam_role_policy.monitoring_metrics": [
+      "create"
+    ],
+    "aws_lambda_function.monitoring": [
+      "update"
+    ]
+  },
+  "before_code_hash": "S49/nUz/mocng0C+1WBKHd/nw0tfrILbPKDba+Up6D4=",
+  "after_code_hash": "jAbgvLdz8Ht97tHzMJ96vWC+5D6GCsC4aj/zrBM9Sfk=",
+  "dashboard_url": "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#dashboards:name=fcaj-ws04-Web_monitoring"
+}

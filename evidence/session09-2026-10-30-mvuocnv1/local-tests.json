@@ -1,0 +1,6 @@
+{
+  "command": "python -B -m unittest discover -s tests -v",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_connection_error_is_unhealthy (test_app.WebsiteCheckTests.test_connection_error_is_unhealthy) ... ok\ntest_direct_timeout_is_unhealthy (test_app.WebsiteCheckTests.test_direct_timeout_is_unhealthy) ... ok\ntest_http_200_is_healthy (test_app.WebsiteCheckTests.test_http_200_is_healthy) ... ok\ntest_http_503_is_unhealthy (test_app.WebsiteCheckTests.test_http_503_is_unhealthy) ... ok\ntest_metric_failure_propagates_and_preserves_healthy_log (test_app.WebsiteCheckTests.test_metric_failure_propagates_and_preserves_healthy_log) ... ok\ntest_metric_failure_propagates_and_preserves_http_503_log (test_app.WebsiteCheckTests.test_metric_failure_propagates_and_preserves_http_503_log) ... ok\ntest_wrapped_timeout_is_unhealthy (test_app.WebsiteCheckTests.test_wrapped_timeout_is_unhealthy) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.012s\n\nOK\n"
+}

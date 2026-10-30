@@ -1,0 +1,12 @@
+{
+  "log_group": "/aws/lambda/fcaj-ws04-Web_monitoring",
+  "events": [
+    {
+      "logStreamName": "2026/10/30/[$LATEST]664aaad5a6a140e2b36f546b85d2813c",
+      "timestamp": 1793343616020,
+      "message": "{\"event\": \"website_check\", \"timestamp\": \"2026-10-30T07:00:16.020051+00:00\", \"request_id\": \"3156cdd1-0687-4d98-98fe-549e3bfb35f5\", \"target_url\": \"https://example.com\", \"http_status\": 200, \"latency_ms\": 455.59, \"is_healthy\": true, \"error\": null}\n",
+      "ingestionTime": 1793343620943,
+      "eventId": "39992899034273560497513576669858552540764889483409489922"
+    }
+  ]
+}

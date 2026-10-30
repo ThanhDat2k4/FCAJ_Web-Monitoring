@@ -1,0 +1,6 @@
+{
+  "Protocol": "email",
+  "Endpoint": "[REDACTED]",
+  "confirmed": true,
+  "SubscriptionArn": "arn:aws:sns:ap-southeast-1:244477277232:fcaj-ws04-Web_monitoring-alerts:36e81bb3-d9ff-4e29-aadb-5b7212b7a4dd"
+}

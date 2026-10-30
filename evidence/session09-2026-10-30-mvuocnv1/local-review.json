@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-30T07:58:36.879499+00:00",
+  "candidate_text_files_checked": 110,
+  "python_files_parsed": 8,
+  "mermaid_blocks_static_checked": 1,
+  "mermaid_rendered": false,
+  "relative_markdown_links_checked": true,
+  "external_links_checked": false,
+  "binary_images_automatically_scanned": false,
+  "ignored_files_opened": false,
+  "ignore_probes": {
+    "infra/terraform.tfstate": true,
+    "infra/terraform.tfstate.backup": true,
+    "infra/review.tfplan": true,
+    "infra/.terraform/providers/probe": true,
+    "infra/alerts.auto.tfvars.json": true,
+    "infra/review.tfvars": true,
+    ".env": true,
+    "private.pem": true,
+    "private.key": true,
+    "infra/monitoring-lambda.zip": true
+  },
+  "findings": [
+    {
+      "file": "docs/evidence-index.md",
+      "type": "missing_relative_link",
+      "target": "../evidence/session09-2026-10-30-mvuocnv1/read-only-state.json"
+    },
+    {
+      "file": "docs/evidence-index.md",
+      "type": "missing_relative_link",
+      "target": "../evidence/session09-2026-10-30-mvuocnv1/local-review.json"
+    },
+    {
+      "file": "docs/evidence-index.md",
+      "type": "missing_relative_link",
+      "target": "../evidence/session09-2026-10-30-mvuocnv1/verification-summary.json"
+    }
+  ],
+  "scope": "Heuristic review of nonignored WS04 text files, not a secret-free certification"
+}

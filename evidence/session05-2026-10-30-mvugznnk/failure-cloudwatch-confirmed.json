@@ -1,0 +1,14 @@
+{
+  "log_group": "/aws/lambda/fcaj-ws04-Web_monitoring",
+  "request_id": "b8b68603-011e-4a0a-95fd-31b777c5507d",
+  "filter_pattern": "\"b8b68603-011e-4a0a-95fd-31b777c5507d\"",
+  "events": [
+    {
+      "logStreamName": "2026/10/30/[$LATEST]5e086b5eadc94a78b5677a2529fe4c24",
+      "timestamp": 1793334542902,
+      "message": "{\"event\": \"website_check\", \"timestamp\": \"2026-10-30T04:29:02.902227+00:00\", \"request_id\": \"b8b68603-011e-4a0a-95fd-31b777c5507d\", \"target_url\": \"https://httpbin.org/status/503\", \"http_status\": 503, \"latency_ms\": 1052.87, \"is_healthy\": false, \"error\": \"HTTP 503\"}\n",
+      "ingestionTime": 1793334546343,
+      "eventId": "39992696696980886295743189015067092952482513601450672130"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-30T08:01:37.942070+00:00",
+  "candidate_text_files_checked": 113,
+  "python_files_parsed": 8,
+  "mermaid_blocks_static_checked": 1,
+  "mermaid_rendered": false,
+  "relative_markdown_links_checked": true,
+  "external_links_checked": false,
+  "binary_images_automatically_scanned": false,
+  "ignored_files_opened": false,
+  "ignore_probes": {
+    "infra/terraform.tfstate": true,
+    "infra/terraform.tfstate.backup": true,
+    "infra/review.tfplan": true,
+    "infra/.terraform/providers/probe": true,
+    "infra/alerts.auto.tfvars.json": true,
+    "infra/review.tfvars": true,
+    ".env": true,
+    "private.pem": true,
+    "private.key": true,
+    "infra/monitoring-lambda.zip": true
+  },
+  "findings": [],
+  "scope": "Heuristic review of nonignored WS04 text files, not a secret-free certification"
+}

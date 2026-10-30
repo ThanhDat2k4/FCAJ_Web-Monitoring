@@ -1,0 +1,84 @@
+{
+  "review": "12 PNG opened visually; SVG XML/source checked with its paired rendered PNG",
+  "limitations": "Manual review and metadata heuristics; not an absolute privacy guarantee",
+  "images": [
+    {
+      "file": "evidence/2026-10-29_01_aws-identity.png",
+      "classification": "safe_for_this_scope",
+      "finding_type": "No private content observed; account/ARN/resource/workspace metadata may be retained",
+      "sha256": "cb3fac0837ef0990b24f61904fe1b615295a5fff9f30d2f8be6a2e9e73282717"
+    },
+    {
+      "file": "evidence/2026-10-29_02_terraform-validate.png",
+      "classification": "safe_for_this_scope",
+      "finding_type": "No private content observed; account/ARN/resource/workspace metadata may be retained",
+      "sha256": "e6becec1e9da51b62f2c4191e9159a4cb6f6200f0a6f4c5abcba0034e1274452"
+    },
+    {
+      "file": "evidence/2026-10-29_03_terraform-plan.png",
+      "classification": "safe_for_this_scope",
+      "finding_type": "No private content observed; account/ARN/resource/workspace metadata may be retained",
+      "sha256": "a7b0fde8a2f29f7f3e546e1b86ec92ef1bd56bcc35cb4885139b29d8222b54bc"
+    },
+    {
+      "file": "evidence/02a_terraform-plan-iam-logs.png",
+      "classification": "safe_for_this_scope",
+      "finding_type": "No private content observed; account/ARN/resource/workspace metadata may be retained",
+      "sha256": "23f1c07d5c2a67d94d1ffa6d32823f0901f24baf45691fcbb1494ea4b8a6e482"
+    },
+    {
+      "file": "evidence/02b_terraform-apply-iam-logs.png",
+      "classification": "safe_for_this_scope",
+      "finding_type": "No private content observed; account/ARN/resource/workspace metadata may be retained",
+      "sha256": "840c77493538e2778b104596563f510488417a65379df454440e620809ee4073"
+    },
+    {
+      "file": "evidence/02c_lambda-role-permissions.png",
+      "classification": "safe_for_this_scope",
+      "finding_type": "No private content observed; account/ARN/resource/workspace metadata may be retained",
+      "sha256": "1efd1a1c3143d71117bdf6bbeaf86f2498662f7a8e2b577391894e82fa03e0d0"
+    },
+    {
+      "file": "evidence/02d_lambda-role-trust.png",
+      "classification": "safe_for_this_scope",
+      "finding_type": "No private content observed; account/ARN/resource/workspace metadata may be retained",
+      "sha256": "fcc2b05c03203de054aed7cffdb0ded454fb8cdabd479f4b4cc1ed978cdbcb2c"
+    },
+    {
+      "file": "evidence/02e_log-group-retention.png",
+      "classification": "safe_for_this_scope",
+      "finding_type": "No private content observed; account/ARN/resource/workspace metadata may be retained",
+      "sha256": "212864d470994acc3d2e11c1b50e0d3bd8d3b795381ce9bc3f6b95f0bb60d438"
+    },
+    {
+      "file": "evidence/session09-2026-10-30-mvuocnv1/email-subjects.png",
+      "classification": "safe_for_this_scope",
+      "finding_type": "No private content observed; account/ARN/resource/workspace metadata may be retained",
+      "sha256": "14ed7421d792637570d50b525afb7eb1b251cbd674585349d2b6e7aced641f43"
+    },
+    {
+      "file": "evidence/session10-2026-10-30-mvuq082h/dashboard-time-range.png",
+      "classification": "safe_for_this_scope",
+      "finding_type": "No private content observed; account/ARN/resource/workspace metadata may be retained",
+      "sha256": "5286cb3464c52ada37e590f98f45f4ea3c62b0915ead8634e65596ef7246d58c"
+    },
+    {
+      "file": "evidence/session10-2026-10-30-mvuq082h/dashboard-widgets.png",
+      "classification": "safe_for_this_scope",
+      "finding_type": "No private content observed; account/ARN/resource/workspace metadata may be retained",
+      "sha256": "ce6e1f292858d041cffae788e6660e9f4c8f7b2085dd73059dc8a54aafb9cfea"
+    },
+    {
+      "file": "evidence/session10-2026-10-30-mvuq082h/architecture.png",
+      "classification": "safe_for_this_scope",
+      "finding_type": "No private content observed; account/ARN/resource/workspace metadata may be retained",
+      "sha256": "02dff0236af84736c4b82bf79badc196c4f2c5136684e641c1df6a1be39e455e"
+    },
+    {
+      "file": "evidence/session10-2026-10-30-mvuq082h/architecture.svg",
+      "classification": "safe_for_this_scope",
+      "finding_type": "No private content observed; account/ARN/resource/workspace metadata may be retained",
+      "sha256": "b1aaca82c41d95052c562428a27bde1736d2925085c1dc6c237e0e61bff28ee1"
+    }
+  ]
+}

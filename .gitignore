@@ -1,0 +1,30 @@
+# Terraform local data and state
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+
+# Local variable values
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Generated Lambda deployment package
+**/infra/monitoring-lambda.zip
+# Standalone export: keep local work/auth/share artifacts private.
+output/

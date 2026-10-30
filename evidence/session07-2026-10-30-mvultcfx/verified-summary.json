@@ -1,0 +1,25 @@
+{
+  "account": "244477277232",
+  "region": "ap-southeast-1",
+  "errors": [],
+  "dashboard_url": "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#dashboards:name=fcaj-ws04-Web_monitoring",
+  "invocation_commands": 1,
+  "console_ui_verified": false,
+  "dashboard_api_verified": true,
+  "response": {
+    "event": "website_check",
+    "timestamp": "2026-10-30T07:00:16.020051+00:00",
+    "request_id": "3156cdd1-0687-4d98-98fe-549e3bfb35f5",
+    "target_url": "https://example.com",
+    "http_status": 200,
+    "latency_ms": 455.59,
+    "is_healthy": true,
+    "error": null
+  },
+  "log_matches_response": true,
+  "metrics_match_response": true,
+  "scheduler_disabled": true,
+  "scheduler_unchanged": true,
+  "lambda_configuration_preserved_except_code": true,
+  "final_plan_no_changes": true
+}
