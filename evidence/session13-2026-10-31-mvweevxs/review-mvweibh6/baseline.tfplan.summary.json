@@ -1,0 +1,105 @@
+{
+  "private_path": "output\\cleanup\\session13-2026-10-31-mvweevxs\\review-mvweibh6\\baseline.tfplan",
+  "sha256": "afe5253f117cff397f32add59ddb5e9a31eb73f8d413d19309cf7303e949a93f",
+  "managed_changes": [
+    {
+      "address": "aws_cloudwatch_dashboard.monitoring",
+      "type": "aws_cloudwatch_dashboard",
+      "actions": [
+        "no-op"
+      ]
+    },
+    {
+      "address": "aws_cloudwatch_log_group.monitoring",
+      "type": "aws_cloudwatch_log_group",
+      "actions": [
+        "no-op"
+      ]
+    },
+    {
+      "address": "aws_cloudwatch_metric_alarm.availability",
+      "type": "aws_cloudwatch_metric_alarm",
+      "actions": [
+        "no-op"
+      ]
+    },
+    {
+      "address": "aws_iam_role.monitoring_lambda",
+      "type": "aws_iam_role",
+      "actions": [
+        "no-op"
+      ]
+    },
+    {
+      "address": "aws_iam_role.monitoring_scheduler",
+      "type": "aws_iam_role",
+      "actions": [
+        "no-op"
+      ]
+    },
+    {
+      "address": "aws_iam_role_policy.monitoring_logs",
+      "type": "aws_iam_role_policy",
+      "actions": [
+        "no-op"
+      ]
+    },
+    {
+      "address": "aws_iam_role_policy.monitoring_metrics",
+      "type": "aws_iam_role_policy",
+      "actions": [
+        "no-op"
+      ]
+    },
+    {
+      "address": "aws_iam_role_policy.monitoring_scheduler_invoke",
+      "type": "aws_iam_role_policy",
+      "actions": [
+        "no-op"
+      ]
+    },
+    {
+      "address": "aws_lambda_function.monitoring",
+      "type": "aws_lambda_function",
+      "actions": [
+        "no-op"
+      ]
+    },
+    {
+      "address": "aws_scheduler_schedule.monitoring",
+      "type": "aws_scheduler_schedule",
+      "actions": [
+        "no-op"
+      ]
+    },
+    {
+      "address": "aws_scheduler_schedule_group.monitoring",
+      "type": "aws_scheduler_schedule_group",
+      "actions": [
+        "no-op"
+      ]
+    },
+    {
+      "address": "aws_sns_topic.monitoring_alerts",
+      "type": "aws_sns_topic",
+      "actions": [
+        "no-op"
+      ]
+    },
+    {
+      "address": "aws_sns_topic_policy.monitoring_alerts",
+      "type": "aws_sns_topic_policy",
+      "actions": [
+        "no-op"
+      ]
+    },
+    {
+      "address": "aws_sns_topic_subscription.monitoring_email",
+      "type": "aws_sns_topic_subscription",
+      "actions": [
+        "no-op"
+      ]
+    }
+  ],
+  "drift": []
+}

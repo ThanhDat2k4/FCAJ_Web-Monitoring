@@ -1,0 +1,105 @@
+{
+  "private_path": "output\\cleanup\\session13-2026-10-31-mvweevxs\\review-mvweibh6\\destroy.tfplan",
+  "sha256": "3d382fb7dc7979b1b41ed4f845d2032e60454efa8e277c93256bef63fbcef801",
+  "managed_changes": [
+    {
+      "address": "aws_cloudwatch_dashboard.monitoring",
+      "type": "aws_cloudwatch_dashboard",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_cloudwatch_log_group.monitoring",
+      "type": "aws_cloudwatch_log_group",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_cloudwatch_metric_alarm.availability",
+      "type": "aws_cloudwatch_metric_alarm",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_iam_role.monitoring_lambda",
+      "type": "aws_iam_role",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_iam_role.monitoring_scheduler",
+      "type": "aws_iam_role",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_iam_role_policy.monitoring_logs",
+      "type": "aws_iam_role_policy",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_iam_role_policy.monitoring_metrics",
+      "type": "aws_iam_role_policy",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_iam_role_policy.monitoring_scheduler_invoke",
+      "type": "aws_iam_role_policy",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_lambda_function.monitoring",
+      "type": "aws_lambda_function",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_scheduler_schedule.monitoring",
+      "type": "aws_scheduler_schedule",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_scheduler_schedule_group.monitoring",
+      "type": "aws_scheduler_schedule_group",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_sns_topic.monitoring_alerts",
+      "type": "aws_sns_topic",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_sns_topic_policy.monitoring_alerts",
+      "type": "aws_sns_topic_policy",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_sns_topic_subscription.monitoring_email",
+      "type": "aws_sns_topic_subscription",
+      "actions": [
+        "delete"
+      ]
+    }
+  ],
+  "drift": []
+}

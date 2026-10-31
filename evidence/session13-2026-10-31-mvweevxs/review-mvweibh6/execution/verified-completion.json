@@ -1,0 +1,25 @@
+{
+  "apply_exit_code": 0,
+  "plan_sha256": "3d382fb7dc7979b1b41ed4f845d2032e60454efa8e277c93256bef63fbcef801",
+  "expected_deleted": 14,
+  "aws_absence_confirmed": 14,
+  "unknown_or_still_present": [],
+  "managed_remaining": [],
+  "state_list_exit_code": 0,
+  "verified_complete": true,
+  "github_changed": false,
+  "local_evidence_deleted": false,
+  "cost_zero_claim": false,
+  "dashboard_followup": {
+    "operation": "GetDashboard",
+    "error_code": "ResourceNotFound",
+    "message": "Dashboard fcaj-ws04-Web_monitoring does not exist",
+    "interpretation": "absent confirmed; initial classifier omitted ResourceNotFound"
+  },
+  "verification_direct_count": 13,
+  "verification_via_parent_absence_count": 1,
+  "historical_bundle_hashes_rechecked": true,
+  "private_backups_preserved": true,
+  "normal_plan_after_cleanup": "not run; retained configuration would propose recreation",
+  "terraform_destroyed_count": 14
+}

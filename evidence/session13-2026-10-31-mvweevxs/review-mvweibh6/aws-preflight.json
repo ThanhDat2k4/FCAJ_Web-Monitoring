@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-10-31T12:52:43.543714+00:00",
+  "identity": {
+    "UserId": "244477277232",
+    "Account": "244477277232",
+    "Arn": "arn:aws:iam::244477277232:root"
+  },
+  "region": "ap-southeast-1",
+  "lambda": {
+    "name": "fcaj-ws04-Web_monitoring",
+    "arn": "arn:aws:lambda:ap-southeast-1:244477277232:function:fcaj-ws04-Web_monitoring",
+    "runtime": "python3.13",
+    "state": "Active",
+    "url": "https://example.com"
+  },
+  "schedule": {
+    "arn": "arn:aws:scheduler:ap-southeast-1:244477277232:schedule/fcaj-ws04-Web_monitoring/fcaj-ws04-Web_monitoring-every-5-minutes",
+    "state": "DISABLED",
+    "target": "arn:aws:lambda:ap-southeast-1:244477277232:function:fcaj-ws04-Web_monitoring",
+    "group": "fcaj-ws04-Web_monitoring",
+    "expression": "rate(5 minutes)"
+  }
+}

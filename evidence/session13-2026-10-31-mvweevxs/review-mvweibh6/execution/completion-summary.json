@@ -1,0 +1,15 @@
+{
+  "apply_exit_code": 0,
+  "plan_sha256": "3d382fb7dc7979b1b41ed4f845d2032e60454efa8e277c93256bef63fbcef801",
+  "expected_deleted": 14,
+  "aws_absence_confirmed": 13,
+  "unknown_or_still_present": [
+    "aws_cloudwatch_dashboard.monitoring"
+  ],
+  "managed_remaining": [],
+  "state_list_exit_code": 0,
+  "verified_complete": false,
+  "github_changed": false,
+  "local_evidence_deleted": false,
+  "cost_zero_claim": false
+}

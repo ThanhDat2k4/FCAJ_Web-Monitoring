@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "state_list_exit_code": 0,
+  "managed_remaining": [],
+  "data_sources_remaining": [],
+  "private_log": "apply-private.log",
+  "no_fallback_plan_or_manual_deletion": true
+}

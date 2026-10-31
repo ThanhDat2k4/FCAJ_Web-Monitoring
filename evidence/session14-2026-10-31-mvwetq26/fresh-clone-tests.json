@@ -1,0 +1,11 @@
+{
+  "command": "python -B -m unittest discover -s tests -v",
+  "python_version": "3.14.7",
+  "scope": "fresh public GitHub clone before edits",
+  "base_commit": "7c8b6d605603714305f56f07816351f154ad116a",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_connection_error_is_unhealthy (test_app.WebsiteCheckTests.test_connection_error_is_unhealthy) ... ok\ntest_direct_timeout_is_unhealthy (test_app.WebsiteCheckTests.test_direct_timeout_is_unhealthy) ... ok\ntest_http_200_is_healthy (test_app.WebsiteCheckTests.test_http_200_is_healthy) ... ok\ntest_http_503_is_unhealthy (test_app.WebsiteCheckTests.test_http_503_is_unhealthy) ... ok\ntest_metric_failure_propagates_and_preserves_healthy_log (test_app.WebsiteCheckTests.test_metric_failure_propagates_and_preserves_healthy_log) ... ok\ntest_metric_failure_propagates_and_preserves_http_503_log (test_app.WebsiteCheckTests.test_metric_failure_propagates_and_preserves_http_503_log) ... ok\ntest_wrapped_timeout_is_unhealthy (test_app.WebsiteCheckTests.test_wrapped_timeout_is_unhealthy) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.013s\n\nOK\n",
+  "aws_calls": false,
+  "integration_scripts_run": false
+}

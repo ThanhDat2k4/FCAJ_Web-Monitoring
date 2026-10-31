@@ -1,5 +1,10 @@
 # WS04 — Website Monitoring: tóm tắt portfolio
 
+**Sau cleanup 31/10/2026:** 14 tài nguyên AWS của stack đã bị xóa; state không
+còn managed resource. Đây là portfolio của thực nghiệm đã hoàn tất, không
+phải monitor đang hoạt động. [Nhật ký cleanup](session-13-cleanup.md) lưu
+phạm vi, API absence và giới hạn kiểm chứng. Chặng 14 chỉ kiểm tra local.
+
 ## Bài toán
 
 Tự động kiểm tra một website, lưu kết quả có thể đối chiếu, hiển thị trạng thái
@@ -67,6 +72,11 @@ CI cho test/validate và quản lý state phù hợp đội nhóm. Đây là hư
 chưa triển khai hoặc ghi nhận là đã đạt. Không đưa số liệu tiết kiệm chi phí
 hay bảo đảm credit chi trả khi chưa có bằng chứng.
 
-Trạng thái cuối đã xác minh ở session 10: Scheduler DISABLED, URL ban đầu được
-giữ nguyên. Chặng chuẩn bị chia sẻ chỉ làm local, không xác minh lại AWS.
-Cleanup là công việc riêng theo [hướng dẫn](cleanup.md), chưa thực hiện.
+Session 10 ghi nhận Scheduler DISABLED và URL ban đầu trước cleanup. Session 13
+đã xác minh cleanup: 14 destroyed, 13 kiểm tra AWS trực tiếp và 1 qua parent
+absence; không xóa evidence local/GitHub. Ảnh, log, metrics, email là lịch sử.
+
+Chặng 14 chạy test offline từ clone mới: 7/7 đạt, Python 3.14.7. Không tái
+triển khai, gọi AWS hoặc xác minh billing; không khẳng định chi phí bằng 0.
+Source Terraform được giữ để học/tái triển khai khi có chủ đích; xem
+[hướng dẫn](cleanup.md) và [closeout](session-14-portfolio-closeout.md).

@@ -1,0 +1,23 @@
+{
+  "managed": [
+    "aws_cloudwatch_dashboard.monitoring",
+    "aws_cloudwatch_log_group.monitoring",
+    "aws_cloudwatch_metric_alarm.availability",
+    "aws_iam_role.monitoring_lambda",
+    "aws_iam_role.monitoring_scheduler",
+    "aws_iam_role_policy.monitoring_logs",
+    "aws_iam_role_policy.monitoring_metrics",
+    "aws_iam_role_policy.monitoring_scheduler_invoke",
+    "aws_lambda_function.monitoring",
+    "aws_scheduler_schedule.monitoring",
+    "aws_scheduler_schedule_group.monitoring",
+    "aws_sns_topic.monitoring_alerts",
+    "aws_sns_topic_policy.monitoring_alerts",
+    "aws_sns_topic_subscription.monitoring_email"
+  ],
+  "data_sources": [
+    "data.archive_file.monitoring_lambda",
+    "data.aws_caller_identity.current",
+    "data.aws_partition.current"
+  ]
+}

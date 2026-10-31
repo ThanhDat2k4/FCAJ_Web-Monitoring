@@ -1,0 +1,55 @@
+{
+  "status": "LOCAL_PREPARATION_COMPLETE_AWS_LOGIN_REQUIRED",
+  "date_local": "2026-10-31",
+  "profile": "fcaj-terraform",
+  "provider_account_guard": "244477277232",
+  "provider_region": "ap-southeast-1",
+  "sts_verified": false,
+  "sts_error": "Your session has expired. Please reauthenticate using aws login",
+  "sandbox_sts_error": "Could not connect to AWS Sign-In endpoint; outside sandbox returned expired session",
+  "scheduler_current_state": "NOT_VERIFIED",
+  "aws_resource_inventory_verified": false,
+  "state_inventory_local_only": {
+    "managed": [
+      "aws_cloudwatch_dashboard.monitoring",
+      "aws_cloudwatch_log_group.monitoring",
+      "aws_cloudwatch_metric_alarm.availability",
+      "aws_iam_role.monitoring_lambda",
+      "aws_iam_role.monitoring_scheduler",
+      "aws_iam_role_policy.monitoring_logs",
+      "aws_iam_role_policy.monitoring_metrics",
+      "aws_iam_role_policy.monitoring_scheduler_invoke",
+      "aws_lambda_function.monitoring",
+      "aws_scheduler_schedule.monitoring",
+      "aws_scheduler_schedule_group.monitoring",
+      "aws_sns_topic.monitoring_alerts",
+      "aws_sns_topic_policy.monitoring_alerts",
+      "aws_sns_topic_subscription.monitoring_email"
+    ],
+    "data_sources": [
+      "data.archive_file.monitoring_lambda",
+      "data.aws_caller_identity.current",
+      "data.aws_partition.current"
+    ]
+  },
+  "checks": {
+    "terraform_fmt": "PASS",
+    "terraform_validate_outside_sandbox": "PASS",
+    "archive_checksum": "PASS",
+    "bundle_manifest_hashes": "PASS",
+    "private_backup_ignored": true,
+    "private_backup_copies_match": true
+  },
+  "private_backup_files": [
+    "terraform.tfstate",
+    "terraform.tfstate.backup"
+  ],
+  "private_directory": "output/cleanup/session13-2026-10-31-mvweevxs",
+  "destroy_plan_created": false,
+  "destroy_plan_sha256": null,
+  "aws_changes": false,
+  "apply_destroy_run": false,
+  "logs_fetched": false,
+  "historical_evidence_preserved": true,
+  "next": "Reauthenticate fcaj-main, verify STS fcaj-terraform, then read AWS and generate a fresh reviewed destroy plan; do not apply until user approval"
+}

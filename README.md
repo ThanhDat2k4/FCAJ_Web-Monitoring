@@ -4,10 +4,18 @@ Dự án thực hành AWS First Cloud AI Journey: kiểm tra website bằng Lamb
 ghi log JSON, phát custom metrics, hiển thị dashboard và gửi email khi alarm
 phát hiện lỗi/phục hồi. Terraform quản lý hạ tầng.
 
-**Trạng thái tổng kết 30/10/2026:** đã kiểm chứng chuỗi HTTP 200 → 503 → 200,
-Availability 1 → 0 → 1, alarm OK → ALARM → OK và người dùng xác nhận nhận email.
-Scheduler đang **DISABLED**; TARGET_URL đã khôi phục `https://example.com`.
-Đây là kết quả thực nghiệm, không phải cam kết uptime hoặc giám sát production.
+**Trạng thái sau cleanup 31/10/2026:** đã xóa 14 tài nguyên AWS thuộc stack WS04;
+Terraform state không còn managed resource. Lambda/Scheduler/dashboard/alarm/SNS
+của demo không còn hoạt động. Xem [nhật ký cleanup](docs/session-13-cleanup.md).
+
+Thực nghiệm ngày 30/10/2026 đã kiểm chứng HTTP 200 → 503 → 200, Availability
+1 → 0 → 1, alarm OK → ALARM → OK và người dùng xác nhận nhận email. Scheduler
+đã được tắt và URL đã được khôi phục trước cleanup. Ảnh, log, datapoint và email
+trong repository là **minh chứng lịch sử**, không phải trạng thái giám sát live
+hay cam kết uptime/production. Metrics lịch sử có thể còn theo retention;
+chưa xác minh billing cuối cùng hoặc chi phí toàn tài khoản bằng 0.
+
+[Project summary](docs/project-summary.md) · [Kiểm tra từ clone mới](docs/session-14-portfolio-closeout.md).
 
 ## Kiến trúc
 
@@ -48,11 +56,11 @@ quản trị topic của owner. Log group retention **1 ngày**.
 
 ## Môi trường và cấu hình
 
-- Windows, PowerShell, Python 3.11+ để chạy test; Lambda đang dùng Python 3.13.
+- Windows, PowerShell, Python 3.11+ để chạy test; runtime trong cấu hình là Python 3.13.
   Lần kiểm tra local dùng Python 3.14.7.
 - Terraform theo [versions.tf](infra/versions.tf): >=1.10, <2; provider versions
   được khóa bằng `infra/.terraform.lock.hcl`.
-- AWS CLI v2, profile `fcaj-terraform` hoạt động; đăng nhập gốc dùng `fcaj-main`.
+- Khi triển khai AWS cần CLI v2 và profile `fcaj-terraform`; thực nghiệm đăng nhập bằng `fcaj-main`.
 - Provider hiện giới hạn Account `244477277232`, Region `ap-southeast-1`.
   Khi dùng account khác, phải chủ động sửa/đối chiếu provider và tên tài nguyên;
   không sao chép rồi apply nhầm account.
@@ -68,11 +76,18 @@ Python, không yêu cầu AWS credentials hoặc cài boto3 trên máy để ch�
 
 ## Kiểm tra local an toàn
 
-Từ workspace, vào workshop rồi chạy:
+Mở terminal ngay tại thư mục gốc của bản clone hoặc workshop. Chỉ chạy test mock:
 
 ```powershell
-# Mo PowerShell ngay trong thu muc WS04-share da giai nen
 python -B -m unittest discover -s tests -v
+```
+
+Không cần AWS credentials, boto3 hoặc Terraform init để chạy test. Chặng 14 đã
+chạy từ clone mới: **7/7 đạt**, Python **3.14.7**; không HTTP/AWS thật.
+
+Nếu chủ động kiểm tra Terraform local, có thể dùng:
+
+```powershell
 terraform -chdir=infra fmt -check
 terraform -chdir=infra validate -no-color
 ```
@@ -85,7 +100,8 @@ plan mới phù hợp trước khi tái hiện, không tái dùng saved plan cũ
 
 ## Trình tự triển khai khi được phép
 
-Phần này là hướng dẫn, không phải thao tác đã chạy trong chặng tổng kết.
+Phần này là hướng dẫn tái triển khai trong tương lai, chưa chạy ở chặng 14.
+Sau cleanup, plan thường có thể đề nghị tạo lại stack; chỉ làm khi được phép.
 Với account đã có tài nguyên, dùng đúng state hiện có. Không tạo state mới
 để apply chồng lên tài nguyên cùng tên; cần đối chiếu/import nếu mất liên kết.
 
@@ -117,8 +133,9 @@ Với account đã có tài nguyên, dùng đúng state hiện có. Không tạo
    ```
 
 4. Đọc plan trước khi chạy `terraform apply "deployment-review.tfplan"`.
-   Với triển khai mới cần toàn bộ tài nguyên; với dự án hiện tại, plan bình
-   thường phải không có thay đổi. Dừng nếu có thay đổi ngoài mục tiêu.
+   Với triển khai mới/tái triển khai sau cleanup, plan có thể tạo tài nguyên.
+   Chỉ kỳ vọng plan không thay đổi khi một stack đang tồn tại đã khớp cấu hình.
+   Dừng nếu có thay đổi ngoài mục tiêu đã duyệt.
 5. Mở email SNS cho đúng topic, bấm Confirm subscription và kiểm tra AWS báo
    confirmed trước khi kiểm thử email. Không chia sẻ link xác nhận/unsubscribe.
 6. Nếu chủ động kiểm thử 503/phục hồi: xem [session 08](docs/session-08-alarms-sns.md),
@@ -127,6 +144,9 @@ Với account đã có tài nguyên, dùng đúng state hiện có. Không tạo
    cho kiểm thử end-to-end.
 
 ## Scheduler và dashboard
+
+Các cấu hình/lệnh dưới đây mô tả demo và chỉ áp dụng khi stack đang tồn tại
+hoặc đã được tái triển khai có chủ đích. Hiện schedule/dashboard đã bị xóa.
 
 Scheduler dùng `rate(5 minutes)`, flexible window OFF, input trigger=scheduler,
 retry tối đa 2 lần/event age 300 giây. Bật/tắt từ `infra` khi đã được phép:
@@ -142,10 +162,10 @@ terraform apply "scheduler-disable.tfplan"
 Xác minh AWS DISABLED và plan không còn thay đổi sau khi thực hành.
 Retry giao nhận của Scheduler không chứng minh website 503 được xử lý lại.
 
-[Mở dashboard](https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#dashboards:name=fcaj-ws04-Web_monitoring).
-Đăng nhập đúng account, chọn Singapore và khoảng 13:55–14:40 ngày 30/10/2026
-(giờ Việt Nam) để xem dữ liệu thực nghiệm. Dữ liệu cũ có thể ra ngoài khoảng
-hiển thị mặc định; một lần invoke không tạo nhiều điểm liên tục.
+[URL Console từng dùng trong demo](https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#dashboards:name=fcaj-ws04-Web_monitoring)
+chỉ để tham chiếu; dashboard đã xóa. Để xem thực nghiệm, mở
+[ảnh dashboard lịch sử](evidence/session10-2026-10-30-mvuq082h/dashboard-widgets.png).
+Ảnh không chứng minh dịch vụ đang hoạt động ở thời điểm đọc repository.
 
 ## Đọc metrics và giới hạn
 
@@ -177,6 +197,11 @@ SNS action success khác email tới hộp thư; lần này email được ngư�
 nhận, kèm ảnh danh sách tiêu đề, không phải kiểm tra mailbox tự động.
 
 ## Chia sẻ và chi phí
+
+`MANIFEST.json`, `SHA256SUMS.txt` và `PACKAGE-VERIFICATION.json` là snapshot
+chặng 11, được giữ nguyên; không dùng chúng để xác minh phiên bản sau cập nhật.
+`PORTFOLIO-MANIFEST.json` và `PORTFOLIO-SHA256SUMS.txt` trong bản dự kiến xuất bản
+chặng 14 kiểm tra bộ file mới, không thay đổi checksum của evidence cũ.
 
 Đọc [mục lục evidence](docs/evidence-index.md) và [tổng kết rà soát](docs/session-09-project-wrap-up.md)
 trước khi chia sẻ. Không đưa state/plan, tfvars email, credentials hoặc link

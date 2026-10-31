@@ -18,6 +18,10 @@ Email subscription khi trien khai moi can nguoi dung Confirm; khong sao chep sub
 
 Doc cac snapshot lich su cung verified-summary; intermediate errors/pending duoc giu nguyen.
 Mot anh session03 duoc nhac bang ten trong nhat ky cu khong co trong nguon; khong tai tao.
-Chua chon license/chua upload/chua kiem tra GitHub preview. Nguoi dung quyet dinh truoc public.
+Bản đầu đã được xuất bản Public ở chặng12 và kiểm tra GitHub UI. Chưa chọn license. Bản cập nhật chặng14 chưa được push.
 Metrics/dashboard/alarm/SNS co the phat sinh chi phi; khong bao dam mien phi/credit.
-Cleanup rieng, chua chay. Anh da xem bang mat va text scan heuristic khong bao dam tuyet doi.
+Cleanup chặng13 đã hoàn tất ngày 31/10/2026: xóa 14 tài nguyên; xem README/nhật ký cleanup. Anh da xem bang mat va text scan heuristic khong bao dam tuyet doi.
+
+## Phạm vi checksum sau cập nhật
+
+MANIFEST.json, SHA256SUMS.txt và PACKAGE-VERIFICATION.json là snapshot chặng11, không kiểm tra phiên bản hiện tại. Giữ nguyên byte gốc của các snapshot. PORTFOLIO-MANIFEST.json và PORTFOLIO-SHA256SUMS.txt kiểm tra bộ file của bản cập nhật chặng14. Hai file mới không tự hash chính chúng. Ảnh/log/metrics/email đều là minh chứng lịch sử, không phải monitor đang chạy.

@@ -1,0 +1,117 @@
+{
+  "checked_at_utc": "2026-10-31T12:58:51.838836+00:00",
+  "checks": [
+    {
+      "address": "aws_lambda_function.monitoring",
+      "absent": true,
+      "aws_exit_code": 254,
+      "error_code": "ResourceNotFoundException",
+      "verification": "direct API",
+      "parent": null
+    },
+    {
+      "address": "aws_cloudwatch_log_group.monitoring",
+      "absent": true,
+      "aws_exit_code": 0,
+      "error_code": null,
+      "verification": "direct API",
+      "parent": null
+    },
+    {
+      "address": "aws_cloudwatch_dashboard.monitoring",
+      "absent": false,
+      "aws_exit_code": 254,
+      "error_code": "ResourceNotFound",
+      "verification": "direct API",
+      "parent": null
+    },
+    {
+      "address": "aws_cloudwatch_metric_alarm.availability",
+      "absent": true,
+      "aws_exit_code": 0,
+      "error_code": null,
+      "verification": "direct API",
+      "parent": null
+    },
+    {
+      "address": "aws_iam_role.monitoring_lambda",
+      "absent": true,
+      "aws_exit_code": 254,
+      "error_code": "NoSuchEntity",
+      "verification": "direct API",
+      "parent": null
+    },
+    {
+      "address": "aws_iam_role.monitoring_scheduler",
+      "absent": true,
+      "aws_exit_code": 254,
+      "error_code": "NoSuchEntity",
+      "verification": "direct API",
+      "parent": null
+    },
+    {
+      "address": "aws_iam_role_policy.monitoring_logs",
+      "absent": true,
+      "aws_exit_code": 254,
+      "error_code": "NoSuchEntity",
+      "verification": "direct API",
+      "parent": null
+    },
+    {
+      "address": "aws_iam_role_policy.monitoring_metrics",
+      "absent": true,
+      "aws_exit_code": 254,
+      "error_code": "NoSuchEntity",
+      "verification": "direct API",
+      "parent": null
+    },
+    {
+      "address": "aws_iam_role_policy.monitoring_scheduler_invoke",
+      "absent": true,
+      "aws_exit_code": 254,
+      "error_code": "NoSuchEntity",
+      "verification": "direct API",
+      "parent": null
+    },
+    {
+      "address": "aws_scheduler_schedule.monitoring",
+      "absent": true,
+      "aws_exit_code": 254,
+      "error_code": "ResourceNotFoundException",
+      "verification": "direct API",
+      "parent": null
+    },
+    {
+      "address": "aws_scheduler_schedule_group.monitoring",
+      "absent": true,
+      "aws_exit_code": 254,
+      "error_code": "ResourceNotFoundException",
+      "verification": "direct API",
+      "parent": null
+    },
+    {
+      "address": "aws_sns_topic.monitoring_alerts",
+      "absent": true,
+      "aws_exit_code": 254,
+      "error_code": "NotFound",
+      "verification": "direct API",
+      "parent": null
+    },
+    {
+      "address": "aws_sns_topic_policy.monitoring_alerts",
+      "absent": true,
+      "aws_exit_code": 254,
+      "error_code": "NotFound",
+      "verification": "parent absent implies dependent absent",
+      "parent": "aws_sns_topic.monitoring_alerts"
+    },
+    {
+      "address": "aws_sns_topic_subscription.monitoring_email",
+      "absent": true,
+      "aws_exit_code": 254,
+      "error_code": "NotFound",
+      "verification": "direct API",
+      "parent": null
+    }
+  ]
+}

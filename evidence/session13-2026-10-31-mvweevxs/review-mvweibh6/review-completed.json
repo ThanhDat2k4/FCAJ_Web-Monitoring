@@ -1,0 +1,116 @@
+{
+  "account": "244477277232",
+  "region": "ap-southeast-1",
+  "scheduler": "DISABLED",
+  "target_url": "https://example.com",
+  "baseline_managed_changes": 0,
+  "drift": [],
+  "delete_count": 14,
+  "create_update_replace_count": 0,
+  "plan": "output\\cleanup\\session13-2026-10-31-mvweevxs\\review-mvweibh6\\destroy.tfplan",
+  "plan_sha256": "3d382fb7dc7979b1b41ed4f845d2032e60454efa8e277c93256bef63fbcef801",
+  "retained_log_events_saved": 0,
+  "state_unchanged": true,
+  "applied": false,
+  "approval": "PENDING user approval of exact saved plan",
+  "resources": [
+    {
+      "address": "aws_cloudwatch_dashboard.monitoring",
+      "type": "aws_cloudwatch_dashboard",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_cloudwatch_log_group.monitoring",
+      "type": "aws_cloudwatch_log_group",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_cloudwatch_metric_alarm.availability",
+      "type": "aws_cloudwatch_metric_alarm",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_iam_role.monitoring_lambda",
+      "type": "aws_iam_role",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_iam_role.monitoring_scheduler",
+      "type": "aws_iam_role",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_iam_role_policy.monitoring_logs",
+      "type": "aws_iam_role_policy",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_iam_role_policy.monitoring_metrics",
+      "type": "aws_iam_role_policy",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_iam_role_policy.monitoring_scheduler_invoke",
+      "type": "aws_iam_role_policy",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_lambda_function.monitoring",
+      "type": "aws_lambda_function",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_scheduler_schedule.monitoring",
+      "type": "aws_scheduler_schedule",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_scheduler_schedule_group.monitoring",
+      "type": "aws_scheduler_schedule_group",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_sns_topic.monitoring_alerts",
+      "type": "aws_sns_topic",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_sns_topic_policy.monitoring_alerts",
+      "type": "aws_sns_topic_policy",
+      "actions": [
+        "delete"
+      ]
+    },
+    {
+      "address": "aws_sns_topic_subscription.monitoring_email",
+      "type": "aws_sns_topic_subscription",
+      "actions": [
+        "delete"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "events": [],
+  "next_page_available": false,
+  "limit": 200,
+  "scope": "Returned retained website_check events only; no synthetic requests or completeness claim"
+}
